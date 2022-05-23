@@ -6,6 +6,7 @@ This project is a React based application that generates prompts and displays th
 
 Please set your API key in PostForm.js l. 6, the API key should
 be set via OpenAPI.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
