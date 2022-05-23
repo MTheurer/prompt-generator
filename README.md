@@ -1,12 +1,12 @@
 # Getting Started with the Prompt Generator
 
-This project is a React based application that generates prompts and displays the current prompts and responses.
+React project that uses Open Artifical Intelligence to produce AI-generated text based off a prompt.
 
 ## IMPORTANT Before Use
 
 When accessing github pages URL set the api key as a url parameter https://mtheurer.github.io/prompt-generator/?key=xxxx
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![ScreenShot](/public/screen.png)
 
 ## Available Scripts
 
