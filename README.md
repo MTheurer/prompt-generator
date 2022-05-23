@@ -2,10 +2,9 @@
 
 This project is a React based application that generates prompts and displays the current prompts and responses.
 
-## Before Use
+## IMPORTANT Before Use
 
-Please set your API key in PostForm.js l. 6, the API key should
-be set via OpenAPI.
+When accessing github pages URL set the api key as a url parameter https://mtheurer.github.io/prompt-generator/?key=xxxx
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

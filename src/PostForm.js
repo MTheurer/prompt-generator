@@ -1,23 +1,20 @@
 import React, { Component } from 'react'
 import  './PostForm.css'
 
-// SET APIKEY HERE
-// apiKey should be set to OpenAI subscription key
-var apiKey = "XXX"
-
 export class PostForm extends Component {
     constructor(props) {
       super(props)
-    
+      const queryParams = new URLSearchParams(window.location.search);
       this.state = {
          prompt: '',
-         responseArray: []
+         responseArray: [],
+         apiKey: queryParams.get('key'),
       }
     }
- 
+
     inputHandler = (event) => {
         this.setState({ prompt: event.target.value})
-    }
+    }    
 
     submitHandler = (event) => {
         event.preventDefault()
@@ -34,7 +31,7 @@ export class PostForm extends Component {
         method: "POST",
         headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${apiKey}`,
+        Authorization: `Bearer ${this.state.apiKey}`,
             },
         body: JSON.stringify(data),
         }).then(response => response.json())
@@ -48,6 +45,7 @@ export class PostForm extends Component {
         });
 
     }
+
   render() {
     const {responseArray} = this.state
     const {prompt} = this.state
