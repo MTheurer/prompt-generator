@@ -1,0 +1,77 @@
+form {
+  margin: 50px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 450px;
+  max-width: 450px;
+  border-radius: 50%;
+  background-color: #f8c777;
+}
+
+form h1 {
+  font-size: 75px;
+  margin-left: 75px;
+  padding-top: 15px;
+}
+
+form p {
+  font-style: italic;
+}
+
+form input {
+  height: 40px;
+  width: 250px;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+}
+
+form button {
+  margin-top: 10px;
+  border: none;
+  background-color: #f6bc65;
+  height: 40px;
+  width: 75px;
+  border-radius: 20px;
+}
+
+form button:hover {
+  background-color: #f6ae6a;
+  color: white;
+}
+
+form button:active {
+  background-color: #f56b77;
+}
+
+ul {
+  color: white;
+  max-width: 600px;
+  max-height: 700px;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    max-height: 350px;
+    max-width: 350px;
+  }
+  form h1 {
+    font-size: 50px;
+  }
+  ul {
+    min-width: 350px;
+  }
+}
+/*# sourceMappingURL=PostForm.css.map */

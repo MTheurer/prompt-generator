@@ -1,5 +1,11 @@
-# Getting Started with Create React App
+# Getting Started with the Prompt Generator
 
+This project is a React based application that generates prompts and displays the current prompts and responses.
+
+## Before Use
+
+Please set your API key in PostForm.js l. 6, the API key should
+be set via OpenAPI.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
